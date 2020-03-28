@@ -1,3 +1,7 @@
 import React from "react"
+import MainWrapper from "../components/HOC/MainWrapper"
+const LandingPage =  (props) => {
+    return <div>Hello</div>
+}
 
-export default () => <div>Home Page</div>
+export default MainWrapper(LandingPage)
