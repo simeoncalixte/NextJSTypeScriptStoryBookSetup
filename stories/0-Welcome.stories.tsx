@@ -3,17 +3,13 @@ import { linkTo } from '@storybook/addon-links';
 import { Welcome } from '@storybook/react/demo';
 import {addDecorator} from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-
-addDecorator(withInfo({
-  inline: true,
-}));
-
+import Test from "../pages/"
 export default {
   title: 'Welcome',
   component: Welcome,
 };
 
-export const ToStorybook = () => <Welcome showApp={linkTo('Button')} />;
+export const ToStorybook = () => <Test/>;
 
 ToStorybook.story = {
   name: 'to Storybook',
